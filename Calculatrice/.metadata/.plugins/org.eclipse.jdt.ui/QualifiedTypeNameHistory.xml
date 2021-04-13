@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javafx.beans.property.DoubleProperty"/>
+<fullyQualifiedTypeName name="javafx.beans.property.SimpleDoubleProperty"/>
+<fullyQualifiedTypeName name="com.tg.modele.CalculatriceModele"/>
+<fullyQualifiedTypeName name="javafx.util.converter.NumberStringConverter"/>
+<fullyQualifiedTypeName name="com.tg.modele.CalculatriceModele.Operation"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+</qualifiedTypeNameHistroy>

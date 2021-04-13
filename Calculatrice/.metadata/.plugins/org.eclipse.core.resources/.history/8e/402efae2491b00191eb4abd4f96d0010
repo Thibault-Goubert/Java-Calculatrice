@@ -1,0 +1,66 @@
+package com.tg.modele;
+
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+
+public class CalculatriceModele {
+	private DoubleProperty courant;
+	private DoubleProperty resultat;
+	enum Operation {NONE, ADDITION, SOUSTRACTION, MULTIPLICATION, DIVISION,
+		POURCENT, RACINE, CARRE, INVERSE, OPPOSE, EGALE}
+	
+	public CalculatriceModele()
+	{
+		courant = new SimpleDoubleProperty(0);
+		resultat = new SimpleDoubleProperty(0);
+	}
+	
+	public void addition(){
+		
+	}
+	
+	public void soustraction(){
+		
+	}
+	
+	public void multiplication(){
+		
+	}
+	
+	public void division(){
+		
+	}
+	
+	public void pourcent(){
+		
+	}
+	
+	public void racine(){
+		
+	}
+	
+	public void carre(){
+		
+	}
+	
+	public void inverse(){
+		
+	}
+	
+	public void oppose(){
+		
+	}
+	
+	public void egale(){
+		
+	}
+	
+	public void init(){
+		
+	}
+	
+	public DoubleProperty courantDoubleProperty(){
+		return courant;
+	}
+	
+}

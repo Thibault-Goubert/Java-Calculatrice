@@ -1,0 +1,105 @@
+package com.tg.modele;
+
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+
+public class CalculatriceModele {
+	private DoubleProperty courant;
+	private DoubleProperty resultat;
+	private Operation operation;
+	private boolean nouvelleEntrer;
+	enum Operation {NONE, ADDITION, SOUSTRACTION, MULTIPLICATION, DIVISION,
+		POURCENT, RACINE, CARRE, INVERSE, OPPOSE, EGALE}
+	
+	public CalculatriceModele()
+	{
+		courant = new SimpleDoubleProperty();
+		resultat = new SimpleDoubleProperty();
+		operation = Operation.NONE;
+		nouvelleEntrer = true;
+	}
+	
+	public void addition(){
+		operation = Operation.ADDITION;
+		nouvelleEntrer = false;
+		
+		resultat.setValue(courant.getValue());
+		courant.setValue(0);
+		//Debug
+		System.out.println("courant=" + courant.getValue());
+		System.out.println("resultat=" + resultat.getValue());
+	}
+	
+	public void soustraction(){
+		
+	}
+	
+	public void multiplication(){
+		
+	}
+	
+	public void division(){
+		
+	}
+	
+	public void pourcent(){
+		
+	}
+	
+	public void racine(){
+		
+	}
+	
+	public void carre(){
+		
+	}
+	
+	public void inverse(){
+		
+	}
+	
+	public void oppose(){
+		
+	}
+	
+	public void egale(){
+		
+		switch(operation){
+		
+			case ADDITION : 
+				operation = Operation.NONE;
+				nouvelleEntrer = true;
+				courant.setValue(courant.getValue() + resultat.getValue());
+				//Debug
+				System.out.println("courant=" + courant.getValue());
+				System.out.println("resultat=" + resultat.getValue());
+				//
+				break;
+			
+			default:
+				break;
+		}
+	}
+	
+	public void init(){
+		courant.setValue(0);
+		resultat.setValue(0);
+		operation = Operation.NONE;
+		nouvelleEntrer = true;
+		
+		System.out.println("init=reset courant=" + courant.getValue());
+		System.out.println("init=reset resultat=" + resultat.getValue());
+		System.out.println("init=reset operation=" + operation.getDeclaringClass().getName());
+		System.out.println("init=reset nouvelleEntrer=" + nouvelleEntrer);
+	}
+	
+	public void initcourant(){
+		courant.setValue(0);
+		System.out.println("initcourant=reset courant=" + courant.getValue());
+	}
+	
+	public DoubleProperty courantDoubleProperty(){
+		return courant;
+	}
+	
+}

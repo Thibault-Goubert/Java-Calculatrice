@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Format">
+            <items>
+              <MenuItem fx:id="m_sortie" mnemonicParsing="false" text="Sortie" />
+                  <MenuItem fx:id="m_standard" mnemonicParsing="false" text="Standard" />
+                  <MenuItem fx:id="m_scientifique" mnemonicParsing="false" text="Scientifique" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aide">
+            <items>
+              <MenuItem fx:id="m_apropos" mnemonicParsing="false" text="A propos" />
+                  <MenuItem fx:id="m_aidecalculatrice" mnemonicParsing="false" text="Aide calculatrice" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="t_saisie" alignment="CENTER_RIGHT" layoutY="27.0" prefHeight="100.0" prefWidth="400.0">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </TextField>
+      <HBox layoutY="127.0" prefHeight="50.0" prefWidth="400.0" />
+      <GridPane layoutY="191.0" prefHeight="509.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="b_pourcent" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="\%">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_egale" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_virgule" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_zero" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_oppose" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="+/-" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_addition" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_trois" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_deux" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_un" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_soustraction" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_six" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_cinq" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_quatre" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_multiplication" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_nine" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_huit" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_sept" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_division" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_back" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="&lt;#" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_clearentry" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="C" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_clearentry" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="CE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_inverse" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="1/x" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_carre" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="x2" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="b_racine" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" text="V" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
